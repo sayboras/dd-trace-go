@@ -13,7 +13,7 @@ import (
 )
 
 // To start tracing requests, wrap the AWS session.Session by invoking
-// awstrace.WrapSession.
+// awstrace.WrapConfig.
 func Example() {
 	cfg := aws.NewConfig().WithRegion("us-west-2")
 	sess := session.Must(session.NewSession(cfg))
